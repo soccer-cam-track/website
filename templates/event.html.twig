@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<div class="card">
+<div class="card-header">
+<h3>
+    {{ event.name }}
+</h3>
+
+🗓️ <b>Dates</b>: {{ event.date_start }} &rarr; {{ event.date_end }}
+<br/>
+💶 <b>Price for competitors</b>: {{ event.fee }}
+</div>
+<div class="card-body">
+
+{% include("events/"~event.tag~".html.twig") ignore missing %}
+
+</div>
+
+{% endblock %}

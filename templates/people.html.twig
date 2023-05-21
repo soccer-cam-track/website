@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+	<h3>People</h3>
+
+	<div class="alert alert-success">
+		🙏 Thanks to all the people being involved in the league!
+	</div>
+
+	<div class="row">
+		{% for person in people %}
+			<div class="col-sm-6 col-md-4 mb-2">
+				<div class="card m-1 h-100">
+					<div class="card-header">
+                    {{ person.name }}
+                    </div>
+					<div class="card-body">
+                    {% for role in person.roles %}
+                    🏷️ <em>{{ role }}</em>
+                    {% endfor %}
+                    <br/>
+                    📧 <code>{{ person.email }}</code>
+                    </div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+
+{% endblock %}

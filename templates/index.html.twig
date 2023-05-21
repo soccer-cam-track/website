@@ -1,0 +1,41 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+	<div class="card">
+		<div class="card-header">
+			Welcome!
+		</div>
+		<div class="card-body">
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="{{ asset("gfx/setup.png") }}" class="img-fluid"/>
+				</div>
+				<div class="col-sm-9">
+					<b>Soccer<em>Cam Track</em></b>
+					is a league where competitors are challenging themselves in soccer games with
+                    robots that are <b>camera-tracked</b>.
+                    <br/><br/>
+                    The goal of those competitions is to gather students around a challenge mostly
+                    oriented on programming, but which is also an introduction to robotics (involving
+                    sub-problems such as coordinates and trajectories).
+				</div>
+			</div>
+
+            <hr/>
+
+            It currently relies on
+            <a href="https://robot-soccer-kit.github.io/">Robot Soccer Kit</a> project as a
+            "standard" hardware platform.
+		</div>
+	</div>
+
+	<div class="alert alert-info mt-3">
+		ℹ️ Note that, even if often happening during joint-events, and is inspired by the
+        <a href="https://ssl.robocup.org/">SSL</a> and
+        <a href="https://junior.robocup.org/soccer/">Junior Soccer</a>,
+        this league is <b>not</b>
+		an official <em>RoboCup</em> affiliated league.
+	</div>
+
+{% endblock %}

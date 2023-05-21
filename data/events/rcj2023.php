@@ -17,5 +17,5 @@ return [
         "Equipe Robot24-3",
         "IRIS",
         "LES PITCHEURS",
-    ]
+    ],
 ];

@@ -1,7 +1,10 @@
 <?php
 
-return [
-    "people" => [
+namespace App\Data;
+
+class People
+{
+    const people = [
         [
             "name" => "Grégoire Passault",
             "roles" => ["developer", "competition organizer"],
@@ -27,5 +30,5 @@ return [
             "roles" => ["developer", "competition organizer"],
             "email" => "cyprien.brocaire@u-bordeaux.fr"
         ]
-    ]
-];
+    ];
+}

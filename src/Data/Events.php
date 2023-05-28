@@ -23,6 +23,7 @@ class Events
         foreach ($events_by_date as $event) {
             $events[$event["tag"]] = $event;
         }
+        $events = array_reverse($events, true);
 
         return $events;
     }

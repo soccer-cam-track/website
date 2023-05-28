@@ -6,7 +6,7 @@ class Events
 {
     static function getEvents(): array
     {
-        $dir = __dir__ . "/events";
+        $dir = __dir__ . "/../../events";
         $events = [];
 
         foreach (scandir($dir) as $f) {

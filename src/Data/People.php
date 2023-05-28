@@ -8,7 +8,7 @@ class People
         [
             "name" => "Grégoire Passault",
             "roles" => ["developer", "competition organizer"],
-            "email" => "g.passault@gmail.com"
+            "email" => "gregoire.passault@u-bordeaux.fr"
         ],
         [
             "name" => "Laurent Verdier",

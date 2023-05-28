@@ -27,8 +27,14 @@ class DefaultController extends AbstractController
     #[Route('/event/{event}', name: 'event')]
     public function event(string $event): Response
     {
+        $events = Events::getEvents();
+
+        if (!isset($events[$event])) {
+            throw $this->createNotFoundException();
+        }
+
         return $this->render('default/event.html.twig', [
-            'event' => Events::getEvents()[$event]
+            'event' => $events[$event]
         ]);
     }
 
